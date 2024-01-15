@@ -1,0 +1,233 @@
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightpink: hsl(275, 100%, 97%);
+    --grayishpurple: hsl(292, 16%, 49%);
+    --darkpurple: hsl(292, 42%, 14%);
+}
+
+* {
+    color: var(--darkpurple);
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Mobile Styles */
+
+body {
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    Background-repeat:no-repeat;
+    background-color: var(--lightpink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card__wrapper {
+    background-color: var(--white);
+    width: 340px;
+    height: auto;
+    margin: 140px 20px 10px 20px;
+    border-radius: 4%;
+}
+
+
+
+
+
+.card__title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-left:10px;
+
+}
+
+.card__title__image {
+    padding-top: 15px;
+    padding-left:10px;
+    padding-right:20px;
+}
+
+.card__title__header {
+    font-weight: 1000;
+    font-size: 30px;
+    padding-top: 9px;
+}
+
+.question__wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 20px;
+}
+
+.card__button {
+    cursor: pointer;
+    text-align: left;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    width: 270px;
+    padding-left: 10px;
+    
+}
+
+
+
+
+.card__questions__svgs .minus__icon {
+    display: none;
+}
+
+
+.active .card__questions__svgs .minus__icon {
+    display:block;
+}
+
+.card__questions__svgs .plus__icon {
+    display: block;
+}
+
+.active .card__questions__svgs .plus__icon {
+    display: none;
+}
+
+
+.card__button:hover {
+    background-color: var(--white); 
+}
+
+
+.card__questions {
+    font-weight: 100;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--lightpink);
+}
+
+.active .card__questions .card__questions-information {
+    line-height: 20px;
+    display: block;
+}
+
+.card__questions__svgs {
+    translate: 50%;
+}
+
+.card__questions-information {
+    color: var(--grayishpurple);
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 1rem;
+    display: none;
+    padding-left: 10px;
+;}
+
+/* Larger Phone Styles */
+
+@media (min-width: 23.5rem) {
+    body {
+        background-image: url('assets/images/background-pattern-desktop.svg');
+        background-clip: ;
+        Background-repeat: no-repeat;
+        background-color: var(--lightpink);
+}
+}
+
+/* Desktop/Tablet Styles */
+
+@media (min-width: 48rem) {
+    body {
+        background-image: url('assets/images/background-pattern-desktop.svg');
+        Background-repeat: no-repeat;
+        background-color: var(--lightpink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card__wrapper {
+        background-color: var(--white);
+        border-radius: 4%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0px;
+        width:700px ;
+        height:auto;
+        margin: 200px;
+        padding-bottom: 25px;
+    }
+
+
+    .card__title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+
+    .card__title__header {
+        font-weight: 1600;
+        font-size: 40px;
+        padding-top: 9px;
+    }
+
+    .card__button {
+        font-size: 20px;
+        font-weight: 900;
+        cursor: pointer;
+        text-align: left;
+        background-color: transparent;
+        border: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .question__wrapper {
+        display: inline;
+    }
+
+    .card__questions-information {
+        color: var(--grayishpurple);
+        font-size: 18px;
+        font-weight: lighter;
+        padding-top: 1rem;
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    .card__questions {
+        border-bottom: 2px solid var(--lightpink);
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
+    .card__.card__questions {
+        color: var(--white);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
